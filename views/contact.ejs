@@ -1,0 +1,44 @@
+<!--Mathen Panchalingam 300922475 Oct 5th 2022-->
+<%-include partials/header.ejs %>
+<%-include partials/main_nav.ejs %>
+ 
+<style>
+    body{
+        background-color: rgb(163, 162, 162);
+    }
+
+    p{
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+    }
+</style>
+
+<!--Contact info and form. PS was unable to link form to main page in time-->
+<div class="container">
+    <div style="text-align:center">
+      <h2>Contact Me</h2>
+      <p>If you would like to reach me, my contact info is as follows: <br><br>
+        Name: Mathen Panchalingam <br>
+        Email:mathen.p.per@gmail.com <br>
+        Phone:4165776244<br><br>
+        Or you can reach out by filling out the form below!
+      </p>
+
+    <form method="POST" id="form" action="index">
+     <label for="fname">First name:</label><br>
+     <input type="text" id="fname" name="fname" value=""><br>
+     <label for="lname">Last name:</label><br>
+     <input type="text" id="lname" name="lname" value=""><br><br>
+     <label for="numb">Contact number:</label><br>
+     <input type="text" id="numb" name="numb" value=""><br><br>
+     <label for="email">Email:</label><br>
+     <input type="text" id="email" name="email" value=""><br><br>
+     <textarea name="message" form="form">Enter your message here...(or leave blank)</textarea>
+     <input type="submit" value="Submit">
+    </form> 
+    </div>
+  </div> 
+
+<%-include partials/bottom_nav.ejs %>
+<%-include partials/footer.ejs %>
